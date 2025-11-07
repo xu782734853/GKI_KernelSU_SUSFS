@@ -255,9 +255,9 @@ jobs:
 
   trigger-release:
     runs-on: ubuntu-latest
-    #permissions:
-      #contents: write
-      #actions: write
+    permissions:
+      contents: write
+      actions: write
     needs:
         - get_manager
         - check-build-status
