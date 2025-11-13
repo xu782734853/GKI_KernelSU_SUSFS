@@ -2,7 +2,7 @@ name: Auto Trigger on SukiSU Update
 
 on:
   schedule:
-    - cron: '0 4,10,16,22 * * *'  # UTC+8的每6小时执行一次
+    - cron: '0 0 */1 * *'  # 每1天执行一次
   workflow_dispatch:     # 允许手动触发
 
 jobs:
