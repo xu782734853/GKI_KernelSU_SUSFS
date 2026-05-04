@@ -282,6 +282,7 @@ jobs:
           echo "BBG_STATUS=${{ inputs.use_bbg && '支持' || '不支持' }}" >> $GITHUB_ENV
           echo "KPM_LINE=${{ inputs.use_kpm && '-> KPM 支持' || '' }}" >> $GITHUB_ENV
           echo "LZ4_SUFFIX=${{ inputs.use_zram && '、LZ4KD' || '' }}" >> $GITHUB_ENV
+          echo "PROXY_OPTIMIZE-> ${{ inputs.proxy_optimize == true && '已开启' || '未开启' }}" >> $GITHUB_ENV
 
           echo "HOOK_TYPE=-> SUSFS Inline Hooks" >> $GITHUB_ENV
           echo "MOUNT_TYPE=-> Magic Mount 支持" >> $GITHUB_ENV
